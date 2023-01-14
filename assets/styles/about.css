@@ -1,0 +1,75 @@
+.wrap_about .service_wrap .our_service .our_service_item .our_service_subtitle, .wrap_about .service_wrap .our_service .our_service_item .our_srvice_title, .wrap_about .short_discription_wrap .short_discription .short_btn, .wrap_about .short_discription_wrap .short_discription .short_subtitle, .wrap_about .short_discription_wrap .short_discription .short_title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 30px;
+  color: black;
+}
+
+.wrap_about {
+  width: 100%;
+}
+.wrap_about .short_discription_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+.wrap_about .short_discription_wrap .short_discription {
+  max-width: 1220px;
+  width: 100%;
+  padding: 20px 10px;
+}
+.wrap_about .short_discription_wrap .short_discription .short_title {
+  margin-bottom: 40px;
+}
+.wrap_about .short_discription_wrap .short_discription .short_subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  color: #646464;
+  margin-bottom: 40px;
+}
+.wrap_about .short_discription_wrap .short_discription .short_btn {
+  width: 123px;
+  height: 42px;
+  background: #F9A82F;
+  border-radius: 100px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  transition: all 0.5s;
+}
+.wrap_about .short_discription_wrap .short_discription .short_btn:hover {
+  background: black;
+  color: white;
+}
+.wrap_about .service_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrap_about .service_wrap .our_service {
+  max-width: 1220px;
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap_about .service_wrap .our_service .our_service_item {
+  width: 180px;
+}
+.wrap_about .service_wrap .our_service .our_service_item img {
+  margin-bottom: 24px;
+}
+.wrap_about .service_wrap .our_service .our_service_item .our_srvice_title {
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+.wrap_about .service_wrap .our_service .our_service_item .our_service_subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #646464;
+}/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,158 @@
+%subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #BF957D;
+}
+
+%text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+header {
+    // outline: 1px solid red;
+    .bg_header {
+        display: flex;
+        justify-content: center;
+        background: #F8F8F8;
+        .header_wraper {
+            max-width: 1200px;
+            width: 100%;
+            padding: 27px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .info_head {
+                max-width: 422px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .logo_block {
+                    width: 144px;
+                    .logo_subtitle {
+                        @extend %subtitle;
+                    }
+                }
+
+                .phone_block {
+                    width: 122px;
+
+                    .phone_number {
+                        @extend %text;
+                        font-weight: 400;
+                    }
+
+                    .phone_subtitle {
+                        @extend %subtitle;
+                        font-size: 12px;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .seach_block {
+                #search {
+                    max-width: 280px;
+                    width: 100%;
+                    border: 1px solid #DCDCDC;
+                    border-radius: 50px;
+                    padding: 11px 16px;
+                    background-image: url(../images/svg/magnifier.svg);
+                    background-repeat: no-repeat;
+                    background-position: 94% 50%;
+                    background-size: 15px 15px;
+                    vertical-align: middle;
+                }
+            }
+
+            .user_block {
+                max-width: 280px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+
+                .cart_block {
+                    display: flex;
+                    align-items: center;
+
+                    .price {
+                        @extend %text;
+                        color: #6B422B;
+                    }
+                }
+            }
+        }
+    }
+
+    .menu_bg {
+        display: flex;
+        justify-content: center;
+
+        menu {
+            max-width: 1180px;
+            width: 100%;
+            padding: 20px 10px;
+            display: flex;
+            // justify-content: space-between;
+            align-items: center;
+
+            .catalog {
+                @extend %text;
+                color: #F9A82F;
+
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    width: 7px;
+                    height: 7px;
+                    background: url(../images/svg/arrow.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    margin-left: 5px;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            nav {
+                margin-left: auto;
+                max-width: 860px;
+                width: 100%;
+
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+
+                    li {
+                        a {
+                            @extend %text;
+                            transition: all 0.5s;
+
+                            &:hover {
+                                color: #F9B248;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+%text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 30px;
+    color: black;
+}
+
+.wrap_about {
+    width: 100%;
+
+    .short_discription_wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 150px;
+
+        .short_discription {
+            max-width: 1220px;
+            width: 100%;
+            padding: 20px 10px;
+
+            .short_title {
+                @extend %text;
+                margin-bottom: 40px;
+            }
+
+            .short_subtitle {
+                @extend %text;
+                font-weight: 300;
+                font-size: 16px;
+                color: #646464;
+                margin-bottom: 40px;
+            }
+
+            .short_btn {
+                width: 123px;
+                height: 42px;
+                background: #F9A82F;
+                border-radius: 100px;
+
+                @extend %text;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFFFFF;
+                transition: all 0.5s;
+
+                &:hover {
+                    background: black;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .service_wrap {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .our_service {
+            max-width: 1220px;
+            width: 100%;
+            padding: 20px 10px;
+
+            display: flex;
+            justify-content: space-between;
+
+            .our_service_item {
+                width: 180px;
+
+                img {
+                    margin-bottom: 24px;
+                }
+                .our_srvice_title {
+                    @extend %text;
+                    font-size: 22px;
+                    line-height: 26px;
+                    margin-bottom: 24px;
+                }
+
+                .our_service_subtitle {
+                    @extend %text;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: #646464;
+                }
+            }
+        }
+    }
+}

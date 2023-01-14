@@ -1,0 +1,82 @@
+%item_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #151515;
+}
+
+main {
+    width: 100%;
+
+    .wrap_filters {
+        width: 100%;
+        margin-bottom: 90px;
+    
+        .filters {
+            max-width: 1220px;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            padding: 20px 10px;
+            .categories {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 10px;
+                margin-bottom: 70px;
+
+                .brend_item {
+                    width: 217px;
+                    height: 145px;
+                    background: #F7F7F7;
+                    margin-bottom: 14px;
+                    transition: all 1s;
+
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.1);
+                    }
+                                
+                    .brand_item_bg {
+                        width: 217px;
+                        height: 145px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        padding: 10px;
+
+                        .brand_text {
+                            @extend %item_text;
+                            max-width: 125px;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+
+                }
+            }
+
+            .brands {
+                display: flex;
+                justify-content: space-between;
+                .item {
+                    max-width: 110.14px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

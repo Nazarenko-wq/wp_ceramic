@@ -1,0 +1,88 @@
+.comments_bg .comments_wrap .comments_content .comment_item .comment_item_head .date, .comments_bg .comments_wrap .comments_content .comment_item .comment_item_head .user_name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #484848;
+}
+
+.comments_bg {
+  width: 100%;
+  min-height: 460px;
+  background: #FAFAFA;
+  display: flex;
+  justify-content: center;
+}
+.comments_bg .comments_wrap {
+  max-width: 1200px;
+  width: 100%;
+  min-height: 460px;
+  overflow: hidden;
+  padding: 20px 10px;
+  position: relative;
+}
+.comments_bg .comments_wrap .comments_content {
+  width: 2015px;
+  min-height: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  transition: all 2s;
+  padding: 0 10px;
+}
+.comments_bg .comments_wrap .comments_content .comment_item {
+  max-width: 380px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.comments_bg .comments_wrap .comments_content .comment_item .comment_item_head {
+  display: flex;
+  margin-bottom: 24px;
+}
+.comments_bg .comments_wrap .comments_content .comment_item .comment_item_head .user_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.comments_bg .comments_wrap .comments_content .comment_item .comment_item_head .user_name {
+  margin-bottom: 5px;
+}
+.comments_bg .comments_wrap .comments_content .comment_item .comment_item_head .date {
+  font-weight: 400;
+  font-size: 14px;
+  color: #A1A1A1;
+}
+.comments_bg .comments_wrap .comments_content .comment_item .comment_item_text {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #646464;
+}
+.comments_bg .comments_wrap .comments_btns {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  width: 37px;
+  height: 9px;
+  display: flex;
+  justify-content: space-between;
+}
+.comments_bg .comments_wrap .comments_btns .comment_btn {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #F1F1F1;
+}
+.comments_bg .comments_wrap .comments_btns .comment_btn:hover {
+  cursor: pointer;
+}
+.comments_bg .comments_wrap .comments_btns .active_btn {
+  background: #C4C4C4;
+}/*# sourceMappingURL=coments.css.map */

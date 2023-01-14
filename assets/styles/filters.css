@@ -1,0 +1,70 @@
+main .wrap_filters .filters .categories .brend_item .brand_item_bg .brand_text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #151515;
+}
+
+main {
+  width: 100%;
+}
+main .wrap_filters {
+  width: 100%;
+  margin-bottom: 90px;
+}
+main .wrap_filters .filters {
+  max-width: 1220px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+main .wrap_filters .filters .categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 70px;
+}
+main .wrap_filters .filters .categories .brend_item {
+  width: 217px;
+  height: 145px;
+  background: #F7F7F7;
+  margin-bottom: 14px;
+  transition: all 1s;
+}
+main .wrap_filters .filters .categories .brend_item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+main .wrap_filters .filters .categories .brend_item .brand_item_bg {
+  width: 217px;
+  height: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+}
+main .wrap_filters .filters .categories .brend_item .brand_item_bg .brand_text {
+  max-width: 125px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .wrap_filters .filters .brands {
+  display: flex;
+  justify-content: space-between;
+}
+main .wrap_filters .filters .brands .item {
+  max-width: 110.14px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .wrap_filters .filters .brands .item img:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=filters.css.map */

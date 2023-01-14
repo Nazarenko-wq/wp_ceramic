@@ -1,0 +1,121 @@
+header .bg_header .header_wraper .info_head .phone_block .phone_subtitle, header .bg_header .header_wraper .info_head .logo_block .logo_subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #BF957D;
+}
+
+header .menu_bg menu nav ul li a, header .menu_bg menu .catalog, header .bg_header .header_wraper .user_block .cart_block .price, header .bg_header .header_wraper .info_head .phone_block .phone_number {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+header .bg_header {
+  display: flex;
+  justify-content: center;
+  background: #F8F8F8;
+}
+header .bg_header .header_wraper {
+  max-width: 1200px;
+  width: 100%;
+  padding: 27px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .bg_header .header_wraper .info_head {
+  max-width: 422px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .bg_header .header_wraper .info_head .logo_block {
+  width: 144px;
+}
+header .bg_header .header_wraper .info_head .phone_block {
+  width: 122px;
+}
+header .bg_header .header_wraper .info_head .phone_block .phone_number {
+  font-weight: 400;
+}
+header .bg_header .header_wraper .info_head .phone_block .phone_subtitle {
+  font-size: 12px;
+  text-decoration: underline;
+}
+header .bg_header .header_wraper .seach_block #search {
+  max-width: 280px;
+  width: 100%;
+  border: 1px solid #DCDCDC;
+  border-radius: 50px;
+  padding: 11px 16px;
+  background-image: url(../images/svg/magnifier.svg);
+  background-repeat: no-repeat;
+  background-position: 94% 50%;
+  background-size: 15px 15px;
+  vertical-align: middle;
+}
+header .bg_header .header_wraper .user_block {
+  max-width: 280px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .bg_header .header_wraper .user_block img:hover {
+  cursor: pointer;
+}
+header .bg_header .header_wraper .user_block .cart_block {
+  display: flex;
+  align-items: center;
+}
+header .bg_header .header_wraper .user_block .cart_block .price {
+  color: #6B422B;
+}
+header .menu_bg {
+  display: flex;
+  justify-content: center;
+}
+header .menu_bg menu {
+  max-width: 1180px;
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+}
+header .menu_bg menu .catalog {
+  color: #F9A82F;
+}
+header .menu_bg menu .catalog::after {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background: url(../images/svg/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 5px;
+}
+header .menu_bg menu .catalog:hover {
+  cursor: pointer;
+}
+header .menu_bg menu nav {
+  margin-left: auto;
+  max-width: 860px;
+  width: 100%;
+}
+header .menu_bg menu nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+header .menu_bg menu nav ul li a {
+  transition: all 0.5s;
+}
+header .menu_bg menu nav ul li a:hover {
+  color: #F9B248;
+}/*# sourceMappingURL=header.css.map */
