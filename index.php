@@ -131,6 +131,4 @@
 
 <?php get_footer(); ?>
 
-<script type="module" src="<?php echo get_template_directory_uri(); ?>/assets/js/index.js"></script>
-
 </html>

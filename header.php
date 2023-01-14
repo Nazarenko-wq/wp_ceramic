@@ -8,24 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/svg/logo.svg" type="image/x-icon">
-    
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
-   
-   <!-- styles -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/styles/normolize.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/styles/main.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/styles/header.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/styles/slider.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/styles/filters.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/styles/about.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/styles/coments.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/styles/footer.css">
-    
-    <script>
-        let WPJS = {};
-        WPJS.siteUrl = '<?php echo get_template_directory_uri(); ?>';
-    </script>
+
+    <?php wp_head(); ?>
 </head>
 <body>
     <header>
