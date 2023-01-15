@@ -18,13 +18,13 @@ remove_action('wp_head', 'wp_shortlink_wp_head', 10); //remove shortlink
 remove_action('wp_head', 'wp_oembed_add_discovery_links'); //remove alternate
 
 add_action('wp_enqueue_scripts', 'site_scripts');
-function site_scripts ($id) {
+function site_scripts () {
     $version = '0.0.0.0';
     // delete useless tegs
     wp_dequeue_style( 'wp-block-library' );
 
     // delet useless script file
-    // wp_deregister_script( 'wp-embed' );
+    wp_deregister_script( 'wp-embed' );
    
     // add fonts 
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap', array(), $version);
@@ -38,14 +38,22 @@ function site_scripts ($id) {
     wp_localize_script('main-js', 'WPJS', [
         'siteUrl' => get_template_directory_uri(),
     ]);
-    
-    $tag = "<script type='text/javascript' src='//localhost:3000/wp-content/themes/ceramic/assets/js/index.js?ver=0.0.0.0' id='my-script-js'></script>";
-
-    if('main-js' === $id) {
-        return str_replace( '<script type="text/javascrip"', '<script type="module"', $tag );
-    }
 }
 
-add_filter('script_loader_tag' , 'site_scripts');
-apply_filters('script_loader_tag' , 'main-js');
+add_filter( 'script_loader_tag', 'scripts_as_es6_modules', 10, 3 );
+function scripts_as_es6_modules( $tag, $handle) {
+
+	if ( 'main-js' === $handle ) {
+        $tag = preg_replace( '/ type=([\'"])[^\'"]+\1/', '', $tag ); 
+		$tag =  str_replace( '<script ', '<script type="module"', $tag );
+        return $tag;
+	}
+
+	return $tag;
+}
+
+$tag = "<script type='text/javascript' src='//localhost:3000/wp-content/themes/ceramic/assets/js/index.js?ver=0.0.0.0' id='main-js-js'></script>";
+$handle = 'main-js';
+
+apply_filters('script_loader_tag', $tag, $handle);
 ?>
