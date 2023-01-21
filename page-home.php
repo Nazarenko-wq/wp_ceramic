@@ -55,6 +55,7 @@ Template Name: Главная
         </div>
     </div>
 </section>
+<?php print_r($GLOBALS['ceramic']['phone']) ?>
 <main>
     <div class="wrap_filters">
         <div class="filters">

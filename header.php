@@ -17,11 +17,11 @@
             <div class="header_wraper">
                 <div class="info_head">
                     <div class="logo_block">
-                        <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/logo.svg" alt="Logo">
+                        <img class="logo" src="<?php echo wp_get_attachment_image_url(carbon_get_theme_option( 'site_logo' )) ?>" alt="Logo">
                         <p class="logo_subtitle">фабрика декора</p>
                     </div>
                     <div class="phone_block">
-                        <a class="phone_number" href="tel:+79267803663">+7 926 780 3663 
+                        <a class="phone_number" href="tel:<?php echo $GLOBALS['ceramic']['phone_digits'] ?>"> <?php echo $GLOBALS['ceramic']['phone'] ?>
                             <span class="phone_subtitle">Обратный звонок</span>
                         </a>
                 

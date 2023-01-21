@@ -56,4 +56,27 @@ $tag = "<script type='text/javascript' src='//localhost:3000/wp-content/themes/c
 $handle = 'main-js';
 
 apply_filters('script_loader_tag', $tag, $handle);
+
+
+// add carbon fields
+add_action( 'after_setup_theme', 'crb_load' );
+function crb_load() {
+    require_once( 'includes/carbon-fields/vendor/autoload.php' );
+    \Carbon_Fields\Carbon_Fields::boot();
+}
+
+add_action('carbon_fields_register_fields', 'register_carbon_fields');
+function register_carbon_fields () {
+    require_once( 'includes/carbon-fields-options/theme-options.php' );
+}
+
+// create global variable for phone
+add_action('init', 'create_global_variable');
+function create_global_variable () {
+    global $ceramic;
+    $ceramic = [
+        'phone' => carbon_get_theme_option( 'site_phone' ),
+        'phone_digits' => carbon_get_theme_option( 'site_phone_digits' ),
+    ];
+}
 ?>
