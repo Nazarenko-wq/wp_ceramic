@@ -57,6 +57,13 @@ $handle = 'main-js';
 
 apply_filters('script_loader_tag', $tag, $handle);
 
+// init menu
+add_action( 'after_setup_theme', 'theme_support' );
+
+function theme_support() {
+	register_nav_menu( 'menu_main_header', 'Меню в header' );
+}
+
 
 // add carbon fields
 add_action( 'after_setup_theme', 'crb_load' );

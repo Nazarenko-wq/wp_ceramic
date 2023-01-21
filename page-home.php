@@ -55,7 +55,7 @@ Template Name: Главная
         </div>
     </div>
 </section>
-<?php print_r($GLOBALS['ceramic']['phone']) ?>
+<!-- <?php print_r($GLOBALS['ceramic']['phone']) ?> -->
 <main>
     <div class="wrap_filters">
         <div class="filters">
@@ -65,7 +65,7 @@ Template Name: Главная
     </div>
     <div class="wrap_about">
         <div class="short_discription_wrap">
-            <div class="short_discription">
+            <div class="short_discription" id="short_discription">
                 <h2 class="short_title">Коротко о нас</h2>
                 <p class="short_subtitle">
                     Мы, Фабрика Декора "КерамикЪ", уже много лет специализируемся на ретро электрике. За годы существования из увлекшихся любителей с горящими глазами наша команда превратилась в настоящих с большой буквы Профессионалов своего дела. Но искра в наших глазах совершенно не затухла! 

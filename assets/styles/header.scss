@@ -39,8 +39,13 @@ header {
 
                 .logo_block {
                     width: 144px;
+
                     .logo_subtitle {
                         @extend %subtitle;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
                     }
                 }
 

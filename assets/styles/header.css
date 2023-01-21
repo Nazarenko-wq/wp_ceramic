@@ -39,6 +39,9 @@ header .bg_header .header_wraper .info_head {
 header .bg_header .header_wraper .info_head .logo_block {
   width: 144px;
 }
+header .bg_header .header_wraper .info_head .logo_block:hover {
+  cursor: pointer;
+}
 header .bg_header .header_wraper .info_head .phone_block {
   width: 122px;
 }

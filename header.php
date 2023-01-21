@@ -16,10 +16,15 @@
         <div class="bg_header">
             <div class="header_wraper">
                 <div class="info_head">
-                    <div class="logo_block">
-                        <img class="logo" src="<?php echo wp_get_attachment_image_url(carbon_get_theme_option( 'site_logo' )) ?>" alt="Logo">
-                        <p class="logo_subtitle">фабрика декора</p>
-                    </div>
+                    <!-- active logo -->
+                    <?php if(is_front_page()) : ?>
+                        <div class="logo_block">
+                            <img class="logo" src="<?php echo wp_get_attachment_image_url(carbon_get_theme_option( 'site_logo' )) ?>" alt="Logo">
+                            <p class="logo_subtitle">фабрика декора</p>
+                        </div>
+                    <?php else :  ?>
+                        <a href="<?php echo get_home_url() ?>"><img class="logo" src="<?php echo wp_get_attachment_image_url(carbon_get_theme_option( 'site_logo' )) ?>" alt="Logo"></a>
+                    <?php endif; ?>
                     <div class="phone_block">
                         <a class="phone_number" href="tel:<?php echo $GLOBALS['ceramic']['phone_digits'] ?>"> <?php echo $GLOBALS['ceramic']['phone'] ?>
                             <span class="phone_subtitle">Обратный звонок</span>
@@ -44,13 +49,13 @@
             <menu>
                 <a class="catalog">Каталог</a>
                 <nav>
-                    <ul>
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Акции</a></li>
-                        <li><a href="#">Новости</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
+                    <?php
+                        wp_nav_menu( [
+                            'theme_location'  => 'menu_main_header',
+                            'container'       => null,
+                            'menu_class'      => 'header_ul',
+                        ] );
+                    ?>
                 </nav>
             </menu>
         </div>

@@ -1,5 +1,6 @@
-/* Theme Name: Ceramic */
-
+html {
+  scroll-behavior: smooth;
+}
 
 body .main_wraper {
   margin: 0 auto;
