@@ -1,4 +1,4 @@
-    <footer>
+    <footer id="footer">
         <div class="footer_wrap">
             <div class="footer_content">
                 <div class="subscibe_block">
@@ -56,5 +56,3 @@
     </footer>
 
     <?php wp_footer(); ?>
-</body>
-</html>

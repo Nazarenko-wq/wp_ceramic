@@ -3,6 +3,7 @@
 Template Name: Главная
 */
 ?>
+<?php $page_id = get_the_ID() ?>
 
 <?php get_header(); ?>
 
@@ -55,7 +56,6 @@ Template Name: Главная
         </div>
     </div>
 </section>
-<!-- <?php print_r($GLOBALS['ceramic']['phone']) ?> -->
 <main>
     <div class="wrap_filters">
         <div class="filters">
@@ -66,12 +66,13 @@ Template Name: Главная
     <div class="wrap_about">
         <div class="short_discription_wrap">
             <div class="short_discription" id="short_discription">
-                <h2 class="short_title">Коротко о нас</h2>
+                <h2 class="short_title"><?php echo carbon_get_post_meta( $page_id, 'about_title' ); ?></h2>
                 <p class="short_subtitle">
-                    Мы, Фабрика Декора "КерамикЪ", уже много лет специализируемся на ретро электрике. За годы существования из увлекшихся любителей с горящими глазами наша команда превратилась в настоящих с большой буквы Профессионалов своего дела. Но искра в наших глазах совершенно не затухла! 
-                    Сегодня, мы планомерно работаем над тем, чтоб вырастить в таких же Профессионалов новых членов нашей команды.
+                    <?php
+                        echo carbon_get_post_meta( $page_id, 'about_content' );
+                    ?>
                 </p>
-                <button class="short_btn">Подробнее</button>
+                <a href="#footer"><button class="short_btn"><?php echo carbon_get_post_meta( $page_id, 'about_btn_text' ); ?></button></a>
             </div>
         </div>
         <div class="service_wrap">

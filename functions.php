@@ -72,9 +72,11 @@ function crb_load() {
     \Carbon_Fields\Carbon_Fields::boot();
 }
 
+// connect theme-options and post-meta
 add_action('carbon_fields_register_fields', 'register_carbon_fields');
 function register_carbon_fields () {
     require_once( 'includes/carbon-fields-options/theme-options.php' );
+    require_once( 'includes/carbon-fields-options/post-meta.php' );
 }
 
 // create global variable for phone
